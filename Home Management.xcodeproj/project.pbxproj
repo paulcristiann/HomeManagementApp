@@ -8,18 +8,66 @@
 
 /* Begin PBXBuildFile section */
 		C40788492551633900628E05 /* Home_ManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40788482551633900628E05 /* Home_ManagementApp.swift */; };
-		C407884B2551633900628E05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407884A2551633900628E05 /* ContentView.swift */; };
+		C407884B2551633900628E05 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407884A2551633900628E05 /* LoginView.swift */; };
 		C407884D2551633B00628E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C407884C2551633B00628E05 /* Assets.xcassets */; };
 		C40788502551633B00628E05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C407884F2551633B00628E05 /* Preview Assets.xcassets */; };
+		C407885A255176C600628E05 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4078859255176C600628E05 /* RegisterView.swift */; };
+		C407885E25517A1400628E05 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407885D25517A1400628E05 /* DashboardView.swift */; };
+		C407886225517EAD00628E05 /* HouseholdCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407886125517EAD00628E05 /* HouseholdCardView.swift */; };
+		C407886A25518BAD00628E05 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407886925518BAD00628E05 /* MenuRowView.swift */; };
+		C407886E25518C8A00628E05 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407886D25518C8A00628E05 /* MenuView.swift */; };
+		C434C73025528B180043471A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C72F25528B180043471A /* SettingsView.swift */; };
+		C434C7342552AE210043471A /* AddHouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C7332552AE210043471A /* AddHouseholdView.swift */; };
+		C43F5420259C883800624291 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F541F259C883800624291 /* LoginViewModel.swift */; };
+		C43F5423259C8C9400624291 /* UserRegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F5422259C8C9400624291 /* UserRegisterResponse.swift */; };
+		C43F5427259C91DF00624291 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F5426259C91DF00624291 /* RegisterViewModel.swift */; };
+		C43F542B259CA75600624291 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F542A259CA75600624291 /* DashboardViewModel.swift */; };
+		C43F5430259CAD8100624291 /* AddHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F542F259CAD8100624291 /* AddHomeViewModel.swift */; };
+		C44B00382573F97600E76B46 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B00372573F97600E76B46 /* ChangePassword.swift */; };
+		C44C814B25932B79008F694A /* ManageMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C814A25932B79008F694A /* ManageMembers.swift */; };
+		C44C814F25933713008F694A /* AddMemberHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C814E25933713008F694A /* AddMemberHome.swift */; };
+		C4A2CBC2256F91E100AA8740 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2CBC1256F91E100AA8740 /* UserModel.swift */; };
+		C4A2CBC6256F927700AA8740 /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2CBC5256F927700AA8740 /* UserLoginResponse.swift */; };
+		C4DA2DA62586553B00103D43 /* CreateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA2DA52586553B00103D43 /* CreateTask.swift */; };
+		C4E324632572B21100955035 /* HouseholdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E324622572B21100955035 /* HouseholdModel.swift */; };
+		C4E324662572C5E700955035 /* AddHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E324652572C5E700955035 /* AddHome.swift */; };
+		C4EE1FD125778EA4006086A8 /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE1FD025778EA4006086A8 /* HouseholdView.swift */; };
+		C4EE1FD525778FC2006086A8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE1FD425778FC2006086A8 /* Task.swift */; };
+		C4EE1FD825779510006086A8 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE1FD725779510006086A8 /* TaskListViewModel.swift */; };
+		C4EE1FDB2577953C006086A8 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE1FDA2577953C006086A8 /* TaskCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C40788452551633900628E05 /* Home Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40788482551633900628E05 /* Home_ManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ManagementApp.swift; sourceTree = "<group>"; };
-		C407884A2551633900628E05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C407884A2551633900628E05 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C407884C2551633B00628E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C407884F2551633B00628E05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C40788512551633B00628E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4078859255176C600628E05 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		C407885D25517A1400628E05 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C407886125517EAD00628E05 /* HouseholdCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdCardView.swift; sourceTree = "<group>"; };
+		C407886925518BAD00628E05 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
+		C407886D25518C8A00628E05 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		C434C72F25528B180043471A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C434C7332552AE210043471A /* AddHouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHouseholdView.swift; sourceTree = "<group>"; };
+		C43F541F259C883800624291 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C43F5422259C8C9400624291 /* UserRegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterResponse.swift; sourceTree = "<group>"; };
+		C43F5426259C91DF00624291 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		C43F542A259CA75600624291 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		C43F542F259CAD8100624291 /* AddHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeViewModel.swift; sourceTree = "<group>"; };
+		C44B00372573F97600E76B46 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		C44C814A25932B79008F694A /* ManageMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMembers.swift; sourceTree = "<group>"; };
+		C44C814E25933713008F694A /* AddMemberHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberHome.swift; sourceTree = "<group>"; };
+		C4A2CBC1256F91E100AA8740 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C4A2CBC5256F927700AA8740 /* UserLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginResponse.swift; sourceTree = "<group>"; };
+		C4DA2DA52586553B00103D43 /* CreateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTask.swift; sourceTree = "<group>"; };
+		C4E324622572B21100955035 /* HouseholdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdModel.swift; sourceTree = "<group>"; };
+		C4E324652572C5E700955035 /* AddHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHome.swift; sourceTree = "<group>"; };
+		C4EE1FD025778EA4006086A8 /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
+		C4EE1FD425778FC2006086A8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C4EE1FD725779510006086A8 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		C4EE1FDA2577953C006086A8 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +84,7 @@
 		C407883C2551633900628E05 = {
 			isa = PBXGroup;
 			children = (
+				C43F541D259C879200624291 /* ViewModels */,
 				C40788472551633900628E05 /* Home Management */,
 				C40788462551633900628E05 /* Products */,
 			);
@@ -53,7 +102,18 @@
 			isa = PBXGroup;
 			children = (
 				C40788482551633900628E05 /* Home_ManagementApp.swift */,
-				C407884A2551633900628E05 /* ContentView.swift */,
+				C407884A2551633900628E05 /* LoginView.swift */,
+				C4078859255176C600628E05 /* RegisterView.swift */,
+				C407885D25517A1400628E05 /* DashboardView.swift */,
+				C4E324652572C5E700955035 /* AddHome.swift */,
+				C4EE1FD025778EA4006086A8 /* HouseholdView.swift */,
+				C434C72F25528B180043471A /* SettingsView.swift */,
+				C44B00372573F97600E76B46 /* ChangePassword.swift */,
+				C4DA2DA52586553B00103D43 /* CreateTask.swift */,
+				C44C814A25932B79008F694A /* ManageMembers.swift */,
+				C44C814E25933713008F694A /* AddMemberHome.swift */,
+				C4A2CBC0256F91C700AA8740 /* Models */,
+				C407886025517E7100628E05 /* Helper Views */,
 				C407884C2551633B00628E05 /* Assets.xcassets */,
 				C40788512551633B00628E05 /* Info.plist */,
 				C407884E2551633B00628E05 /* Preview Content */,
@@ -67,6 +127,42 @@
 				C407884F2551633B00628E05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C407886025517E7100628E05 /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+				C407886D25518C8A00628E05 /* MenuView.swift */,
+				C407886925518BAD00628E05 /* MenuRowView.swift */,
+				C407886125517EAD00628E05 /* HouseholdCardView.swift */,
+				C434C7332552AE210043471A /* AddHouseholdView.swift */,
+			);
+			path = "Helper Views";
+			sourceTree = "<group>";
+		};
+		C43F541D259C879200624291 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C43F541F259C883800624291 /* LoginViewModel.swift */,
+				C43F5426259C91DF00624291 /* RegisterViewModel.swift */,
+				C43F542A259CA75600624291 /* DashboardViewModel.swift */,
+				C43F542F259CAD8100624291 /* AddHomeViewModel.swift */,
+				C4EE1FD725779510006086A8 /* TaskListViewModel.swift */,
+				C4EE1FDA2577953C006086A8 /* TaskCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C4A2CBC0256F91C700AA8740 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4A2CBC1256F91E100AA8740 /* UserModel.swift */,
+				C4A2CBC5256F927700AA8740 /* UserLoginResponse.swift */,
+				C43F5422259C8C9400624291 /* UserRegisterResponse.swift */,
+				C4E324622572B21100955035 /* HouseholdModel.swift */,
+				C4EE1FD425778FC2006086A8 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +234,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C407884B2551633900628E05 /* ContentView.swift in Sources */,
+				C43F5420259C883800624291 /* LoginViewModel.swift in Sources */,
+				C43F5427259C91DF00624291 /* RegisterViewModel.swift in Sources */,
+				C434C7342552AE210043471A /* AddHouseholdView.swift in Sources */,
+				C4A2CBC6256F927700AA8740 /* UserLoginResponse.swift in Sources */,
+				C407885A255176C600628E05 /* RegisterView.swift in Sources */,
+				C407886E25518C8A00628E05 /* MenuView.swift in Sources */,
+				C44C814B25932B79008F694A /* ManageMembers.swift in Sources */,
+				C4EE1FD125778EA4006086A8 /* HouseholdView.swift in Sources */,
+				C4EE1FD825779510006086A8 /* TaskListViewModel.swift in Sources */,
+				C407886225517EAD00628E05 /* HouseholdCardView.swift in Sources */,
+				C434C73025528B180043471A /* SettingsView.swift in Sources */,
+				C407885E25517A1400628E05 /* DashboardView.swift in Sources */,
+				C44C814F25933713008F694A /* AddMemberHome.swift in Sources */,
+				C44B00382573F97600E76B46 /* ChangePassword.swift in Sources */,
+				C4E324632572B21100955035 /* HouseholdModel.swift in Sources */,
+				C43F5430259CAD8100624291 /* AddHomeViewModel.swift in Sources */,
+				C4E324662572C5E700955035 /* AddHome.swift in Sources */,
+				C43F5423259C8C9400624291 /* UserRegisterResponse.swift in Sources */,
+				C407884B2551633900628E05 /* LoginView.swift in Sources */,
+				C407886A25518BAD00628E05 /* MenuRowView.swift in Sources */,
 				C40788492551633900628E05 /* Home_ManagementApp.swift in Sources */,
+				C4EE1FD525778FC2006086A8 /* Task.swift in Sources */,
+				C4A2CBC2256F91E100AA8740 /* UserModel.swift in Sources */,
+				C43F542B259CA75600624291 /* DashboardViewModel.swift in Sources */,
+				C4DA2DA62586553B00103D43 /* CreateTask.swift in Sources */,
+				C4EE1FDB2577953C006086A8 /* TaskCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
