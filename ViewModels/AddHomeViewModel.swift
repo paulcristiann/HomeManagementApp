@@ -19,7 +19,7 @@ final class AddHomeViewModel: ObservableObject {
     
     func setupDataPublisher(name: String) {
         //Configure the request
-        var request = URLRequest(url: URL(string: ServerData.address + Endpoints.create_home)!)
+        var request = URLRequest(url: URL(string: ServerData.shared.address + ServerData.shared.create_home)!)
         let parameters = ["name": name] as Dictionary<String, Any>
         request.httpMethod = "POST"
         request.addValue("Bearer \(UserSession)", forHTTPHeaderField: "Authorization")

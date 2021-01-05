@@ -22,7 +22,7 @@ final class DashboardViewModel: ObservableObject {
     
     func setupDataPublisher() {
         //Configure the request
-        var request = URLRequest(url: URL(string: ServerData.address + Endpoints.list_homes)!)
+        var request = URLRequest(url: URL(string: ServerData.shared.address + ServerData.shared.list_homes)!)
         request.httpMethod = "GET"
         request.addValue("Bearer \(UserSession)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

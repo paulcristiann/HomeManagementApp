@@ -45,7 +45,7 @@ struct ManageMembers: View {
     
     func loadData() {
         
-        guard let url = URL(string: ServerData.address + Endpoints.list_members + "?home=" + String(home.id)) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.list_members + "?home=" + String(home.id)) else {
             print("Invalid URL")
             return
         }
@@ -74,7 +74,7 @@ struct ManageMembers: View {
     
     func removeMember(atOffsets indexSet: IndexSet) {
         let user = users[indexSet.first!]
-        guard let url = URL(string: ServerData.address + Endpoints.remove_member) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.remove_member) else {
             print("Invalid URL")
             return
         }

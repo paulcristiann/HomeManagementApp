@@ -24,24 +24,27 @@ struct Home_ManagementApp: App {
     }
 }
 
-struct Endpoints {
-    static let register = "/auth/register"
-    static let login = "/auth/login"
-    static let reset = "api/account/reset"
-    static let create_home = "/api/homes/create"
-    static let list_homes = "/api/homes/list"
-    static let leave_home = "/api/homes/leave"
-    static let get_member = "/api/members/get"
-    static let list_members = "/api/members/list"
-    static let add_member = "/api/members/add"
-    static let remove_member = "/api/members/remove"
-    static let task_list = "/api/tasks/list"
-    static let task_create = "/api/tasks/create"
-    static let task_delete = "/api/tasks/delete"
-    static let task_assign = "/api/tasks/assign"
-    static let task_status = "/api/tasks/status"
-}
-
-struct ServerData {
-    static let address = "https://anca.pslr.me"
+class ServerData {
+    
+    static let shared = ServerData()
+    
+    init() {}
+    
+    let address = "https://anca.pslr.me"
+    let register = "/auth/register"
+    let login = "/auth/login"
+    let reset = "api/account/reset"
+    let create_home = "/api/homes/create"
+    let list_homes = "/api/homes/list"
+    let leave_home = "/api/homes/leave"
+    let get_member = "/api/members/get"
+    let list_members = "/api/members/list"
+    let add_member = "/api/members/add"
+    let remove_member = "/api/members/remove"
+    let task_list = "/api/tasks/list"
+    let task_create = "/api/tasks/create"
+    let task_delete = "/api/tasks/delete"
+    let task_assign = "/api/tasks/assign"
+    let task_status = "/api/tasks/status"
+    
 }

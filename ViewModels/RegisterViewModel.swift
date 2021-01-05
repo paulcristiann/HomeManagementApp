@@ -19,7 +19,7 @@ final class RegisterViewModel: ObservableObject {
     
     func setupDataPublisher(name: String, username: String, email: String, password: String) {
         //Configure the request
-        var request = URLRequest(url: URL(string: ServerData.address + Endpoints.register)!)
+        var request = URLRequest(url: URL(string: ServerData.shared.address + ServerData.shared.register)!)
         let parameters = ["name": name, "user": username, "email": email, "password":password] as Dictionary<String, Any>
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])

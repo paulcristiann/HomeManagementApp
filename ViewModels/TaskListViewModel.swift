@@ -23,7 +23,7 @@ final class TaskListViewModel: ObservableObject {
     
     init() {
         //Configure the request
-        var request = URLRequest(url: URL(string: ServerData.address + Endpoints.list_homes)!)
+        var request = URLRequest(url: URL(string: ServerData.shared.address + ServerData.shared.list_homes)!)
         request.httpMethod = "GET"
         request.addValue("Bearer \(sessionKey)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -50,7 +50,7 @@ final class TaskListViewModel: ObservableObject {
     func getAllTasks(homes: [HouseholdModel]) {
         print(homes)
         for home in homes {
-            var request = URLRequest(url: URL(string: ServerData.address + Endpoints.task_list + "?home=" + String(home.id))!)
+            var request = URLRequest(url: URL(string: ServerData.shared.address + ServerData.shared.task_list + "?home=" + String(home.id))!)
             request.httpMethod = "GET"
             request.addValue("Bearer \(sessionKey)", forHTTPHeaderField: "Authorization")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -80,7 +80,7 @@ final class TaskListViewModel: ObservableObject {
     }
     
     func getTasksFromHome(home: HouseholdModel) {
-        guard let url = URL(string: ServerData.address + Endpoints.task_list + "?home=" + String(home.id)) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.task_list + "?home=" + String(home.id)) else {
             print("Invalid URL")
             return
         }
@@ -111,7 +111,7 @@ final class TaskListViewModel: ObservableObject {
     
     func removeTasks(atOffsets indexSet: IndexSet) {
         let task = taskCellViewModels[indexSet.first!]
-        guard let url = URL(string: ServerData.address + Endpoints.task_delete) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.task_delete) else {
             print("Invalid URL")
             return
         }
@@ -144,7 +144,7 @@ final class TaskListViewModel: ObservableObject {
 //    }
     
     func loadData(home: HouseholdModel, filter: String) {
-        guard let url = URL(string: ServerData.address + Endpoints.task_list + "?home=" + String(home.id)) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.task_list + "?home=" + String(home.id)) else {
             print("Invalid URL")
             return
         }

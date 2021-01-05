@@ -37,7 +37,7 @@ struct ChangePassword: View {
                     
                     let params = ["password":newPassword] as Dictionary<String, String>
 
-                    var request = URLRequest(url:URL(string: ServerData.address + Endpoints.reset)!)
+                    var request = URLRequest(url:URL(string: ServerData.shared.address + ServerData.shared.reset)!)
                     
                     request.httpMethod = "POST"
                     request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])

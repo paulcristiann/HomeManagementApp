@@ -64,7 +64,7 @@ struct AddMemberHome: View {
     
     func loadData() {
         
-        guard let url = URL(string: ServerData.address + Endpoints.add_member) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.add_member) else {
             print("Invalid URL")
             return
         }

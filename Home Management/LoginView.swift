@@ -33,6 +33,10 @@ struct LoginView: View {
                             .padding(.bottom, 20)
                         
                         VStack(alignment: .leading, spacing: 15) {
+                            Text("Username")
+                                .font(.headline).foregroundColor(Color.white)
+                                .padding([.top, .bottom], 10)
+                                .shadow(radius: 10.0, x: 20, y: 10)
                             TextField("Username", text: self.$username)
                                 .padding()
                                 .background(Color.themeTextField)
@@ -40,6 +44,10 @@ struct LoginView: View {
                                 .shadow(radius: 10.0, x: 20, y: 10)
                                 .autocapitalization(.none)
                             
+                            Text("Password")
+                                .font(.headline).foregroundColor(Color.white)
+                                .padding([.top, .bottom], 10)
+                                .shadow(radius: 10.0, x: 20, y: 10)
                             SecureField("Password", text: self.$password)
                                 .padding()
                                 .background(Color.themeTextField)
@@ -75,7 +83,8 @@ struct LoginView: View {
                             Button("Sign Up") {
                                 self.showRegisterSheet = true
                             }
-                        }.sheet(isPresented: $showRegisterSheet, content: {
+                        }.padding(.top, 10)
+                        .sheet(isPresented: $showRegisterSheet, content: {
                             RegisterView()
                         })
                         

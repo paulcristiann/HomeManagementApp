@@ -29,6 +29,11 @@ struct RegisterView: View {
                         .shadow(radius: 10.0, x: 20, y: 10)
                     
                     VStack(alignment: .leading, spacing: 15) {
+                        
+                        Text("Full name")
+                            .font(.headline).foregroundColor(Color.white)
+                            .padding([.top, .bottom], 10)
+                            .shadow(radius: 10.0, x: 20, y: 10)
                         TextField("Full name", text: self.$UserFullName)
                             .padding()
                             .background(Color.themeTextField)
@@ -36,6 +41,10 @@ struct RegisterView: View {
                             .shadow(radius: 10.0, x: 20, y: 10)
                             .autocapitalization(.none)
                         
+                        Text("Username")
+                            .font(.headline).foregroundColor(Color.white)
+                            .padding([.top, .bottom], 10)
+                            .shadow(radius: 10.0, x: 20, y: 10)
                         TextField("Username", text: self.$UserNickname)
                             .padding()
                             .background(Color.themeTextField)
@@ -43,6 +52,10 @@ struct RegisterView: View {
                             .shadow(radius: 10.0, x: 20, y: 10)
                             .autocapitalization(.none)
                         
+                        Text("Email")
+                            .font(.headline).foregroundColor(Color.white)
+                            .padding([.top, .bottom], 10)
+                            .shadow(radius: 10.0, x: 20, y: 10)
                         TextField("Email", text: self.$UserEmail)
                             .padding()
                             .background(Color.themeTextField)
@@ -50,6 +63,10 @@ struct RegisterView: View {
                             .shadow(radius: 10.0, x: 20, y: 10)
                             .autocapitalization(.none)
                         
+                        Text("Password")
+                            .font(.headline).foregroundColor(Color.white)
+                            .padding([.top, .bottom], 10)
+                            .shadow(radius: 10.0, x: 20, y: 10)
                         SecureField("Password", text: self.$UserPassword)
                             .padding()
                             .background(Color.themeTextField)
@@ -83,7 +100,7 @@ struct RegisterView: View {
                     Spacer()
                     
                 }
-                .padding(.top, 100)
+                .padding(.top, 10)
             }
             .background(
                 LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .top, endPoint: .bottom)

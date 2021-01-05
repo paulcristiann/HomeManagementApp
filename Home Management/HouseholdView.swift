@@ -97,7 +97,7 @@ struct TaskCell: View {
             .onTapGesture {
                 self.taskCellVM.task.status.toggle()
                 print(String(taskCellVM.task.id))
-                guard let url = URL(string: ServerData.address + Endpoints.task_status) else {
+                guard let url = URL(string: ServerData.shared.address + ServerData.shared.task_status) else {
                     print("Invalid URL")
                     return
                 }

@@ -18,7 +18,7 @@ final class LoginViewModel: ObservableObject {
     
     func setupDataPublisher(username: String, password: String) {
         //Configure the request
-        var request = URLRequest(url: URL(string: ServerData.address + Endpoints.login)!)
+        var request = URLRequest(url: URL(string: ServerData.shared.address + ServerData.shared.login)!)
         let parameters = ["user":username, "password":password] as Dictionary<String, Any>
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])

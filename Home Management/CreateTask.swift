@@ -74,7 +74,7 @@ struct CreateTask: View {
     
     func loadData() {
         
-        guard let url = URL(string: ServerData.address + Endpoints.list_members + "?home=" + String(home.id)) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.list_members + "?home=" + String(home.id)) else {
             print("Invalid URL")
             return
         }
@@ -102,7 +102,7 @@ struct CreateTask: View {
     }
     
     func uploadTask() {
-        guard let url = URL(string: ServerData.address + Endpoints.task_create) else {
+        guard let url = URL(string: ServerData.shared.address + ServerData.shared.task_create) else {
             print("Invalid URL")
             return
         }
@@ -125,7 +125,7 @@ struct CreateTask: View {
                         print(task.title)
                         
                         //Task created, now assign to user
-                        guard let url2 = URL(string: ServerData.address + Endpoints.task_assign) else {
+                        guard let url2 = URL(string: ServerData.shared.address + ServerData.shared.task_assign) else {
                             print("Invalid URL")
                             return
                         }

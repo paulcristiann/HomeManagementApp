@@ -37,7 +37,7 @@ struct SettingsView: View {
                 }
                 
                 Section(header: Text("App settings")){
-                    Text("Server IP: " + ServerData.address)
+                    Text("Server IP: " + ServerData.shared.address)
                 }
                 
                 Section{
